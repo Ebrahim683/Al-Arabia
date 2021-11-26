@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "396423999135",
+    "project_id": "al-arabia-darus-sunnah",
+    "storage_bucket": "al-arabia-darus-sunnah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396423999135:android:e5c66cc04f6f3f7ae7fcaa",
+        "android_client_info": {
+          "package_name": "com.rexoit.al_arabia_darus_sunnah_madrasha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396423999135-0hl9arcfuedupesogvme253kk4gctn17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAedzcVYmrFaMT1Df-1PUaByZaaGeeIzyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396423999135-0hl9arcfuedupesogvme253kk4gctn17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

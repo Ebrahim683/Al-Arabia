@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MadrashaPorichitiActivity">
+
+
+    <include
+        android:id="@+id/toolbar_madrasha_Porichiti"
+        layout="@layout/custom_tool_bar" />
+
+    <TextView
+        android:id="@+id/madrasha_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_madrasha_Porichiti"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="@string/al_arabia_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/madrasha_porichiti_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/madrasha_name"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

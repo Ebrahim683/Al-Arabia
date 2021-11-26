@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".ui.TeacherDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar_td"
+        layout="@layout/custom_tool_bar" />
+
+    <ImageView
+        android:id="@+id/teacher_image_big"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar_td"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        tools:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/teacher_name_text_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_image_big"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        tools:text="মুহাাঃ ইব্রাহীম রহমাি" />
+
+    <TextView
+        android:id="@+id/teacher_post_text_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_name_text_big"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        tools:text="পেিীাঃ বিভাগীয় প্রর্াি (িাংলা বিভাগ)" />
+
+    <TextView
+        android:id="@+id/teacher_age_text_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_post_text_big"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        tools:text="িয়সাঃ ২০ িের।" />
+
+    <com.skydoves.transformationlayout.TransformationLayout
+        android:id="@+id/teacher_transformation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:transformation_direction="auto"
+        app:transformation_duration="450"
+        app:transformation_fadeMode="in"
+        app:transformation_fitMode="auto"
+        app:transformation_pathMode="arc"
+        app:transformation_targetView="@id/card_view_layout">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_show_teacher_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            android:textSize="20sp" />
+
+    </com.skydoves.transformationlayout.TransformationLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#E3D0D0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/teacher_image"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                tools:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/teacher_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacher_image"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp"
+                tools:text="মুহাাঃ ইব্রাহীম রহমাি" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/teacher_name_text">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/teacher_join_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:ignore="RtlSymmetry"
+                        tools:text="কমটনযাগোপির িাবরখাঃ ০১/০৬/২০২০ খৃস্টাব্দ।" />
+
+                    <TextView
+                        android:id="@+id/teacher_post_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="পেিীাঃ বিভাগীয় প্রর্াি (িাংলা বিভাগ)" />
+
+                    <TextView
+                        android:id="@+id/teacher_age_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="িয়সাঃ ২০ িের।" />
+
+                    <TextView
+                        android:id="@+id/teacher_birth_date_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="জন্ম িাবরখাঃ ১১/১২/২০০১ খৃস্টাব্দ।" />
+
+                    <TextView
+                        android:id="@+id/teacher_birth_certificate_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text=" জন্ম সিে িংাঃ *************** " />
+
+                    <TextView
+                        android:id="@+id/teacher_nid_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="নভার্ার আইবি িংাঃ ***************" />
+
+                    <TextView
+                        android:id="@+id/teacher_blood_group_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="ব্লাি গ্রুপাঃ O+ (ও-পপজটিভ)" />
+
+                    <TextView
+                        android:id="@+id/teacher_mobile_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="নমািাইল িাম্বারাঃ ০১৭৪৬-৯৮৯৫০৬, ০১৭৫৩-৭২৬৮০৫" />
+
+                    <TextView
+                        android:id="@+id/teacher_fb_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="এফবি আইবিাঃ www.fb/md ebrahim rahman. " />
+
+                    <TextView
+                        android:id="@+id/teacher_email_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text=" ই-পমইল আইবিাঃ ebrahimrahman20@gmail.com" />
+
+                    <TextView
+                        android:id="@+id/teacher_father_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="বপিা মুহাাঃ িজলুর রহমাি।" />
+
+                    <TextView
+                        android:id="@+id/teacher_father_mobile_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="বপিার নমািাইল িাম্বারাঃ ***************" />
+
+                    <TextView
+                        android:id="@+id/teacher_father_nid_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="বপিার নভার্ার আইবি িংাঃ ***************" />
+
+                    <TextView
+                        android:id="@+id/teacher_father_birth_certificate_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="বপিার জন্ম সিে িংাঃ *************** " />
+
+                    <TextView
+                        android:id="@+id/teacher_mother_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="মািাাঃ িাবেমা আক্তার।" />
+
+                    <TextView
+                        android:id="@+id/teacher_mother_mobile_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="মমািার নমািাইল িাম্বারাঃ ***************" />
+
+                    <TextView
+                        android:id="@+id/teacher_mother_nid_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="মািার নভার্ার আইবি িংাঃ ***************" />
+
+                    <TextView
+                        android:id="@+id/teacher_mother_birth_certificate_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text=" মািার জন্ম সিে িংাঃ *************** " />
+
+                    <TextView
+                        android:id="@+id/teacher_permanent_address_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="েবক্ষণ িড়পকাঠ্া, িাকুয়ার হার্, উবজপুর, িবরশাল।" />
+
+                    <TextView
+                        android:id="@+id/teacher_current_address_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="িরবসংহপুর হাজীপাড়া, ইয়ারপুর।, বজরাপিা।, আশুবলয়া, ঢাকা।" />
+
+                    <TextView
+                        android:id="@+id/teacher_education_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="Mawlana" />
+
+                    <TextView
+                        android:id="@+id/teacher_industry_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="15dp"
+                        android:padding="5dp"
+                        android:paddingStart="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/purple_200"
+                        tools:text="Hat Hajari" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_down_teacher_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

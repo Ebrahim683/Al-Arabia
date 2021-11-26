@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/drawable/bg_card.xml" value="0.21203703703703702" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/drawable/bg_image_border.xml" value="0.21203703703703702" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_child_list.xml" value="0.1675925925925926" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_madrasha_information.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_madrasha_porichiti.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_nursery_list.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_student_details.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_student_information.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_student_list.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_teacher_details.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/activity_teacher_information.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/class_rec_row.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/custom_tool_bar.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/information_rec_row.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/main_rec_row.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/student_list_rec_row.xml" value="0.2" />
+        <entry key="..\:/AlArabiaDarusSunnahMadrasha/app/src/main/res/layout/teacher_information_rec_row.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

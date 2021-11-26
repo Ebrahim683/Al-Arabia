@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sample_student_list_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_android_black_24dp"
+        app:civ_border_color="#F60404"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/sample_student_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/sample_student_list_image"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:text="MD: Abu Rayhan" />
+
+    <TextView
+        android:id="@+id/sample_student_list_father"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sample_student_list_name"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/sample_student_list_image"
+        tools:text="MuHammad Ali" />
+
+    <TextView
+        android:id="@+id/sample_student_list_roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sample_student_list_father"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/sample_student_list_image"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/sample_student_list_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sample_student_list_mother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sample_student_list_current_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sample_student_list_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
